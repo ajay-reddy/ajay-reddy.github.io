@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.marqueetext {
+  font-family: "Sofia", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+ 
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 30px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: tomato;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="main.html">Home</a>
+  <a href="#news">Blogs</a>
+  <div class="dropdown">
+    <button class="dropbtn">Categories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Digitalmarketing.html">Digital Marketing</a>
+      <a href="Photography.html">Photography</a>
+      <a href="Foodtruck.html">Food Truck</a>
+	  <a href="Youtuber.html">Youtuber</a>
+      <a href="Graphicdesigner.html">Graphic Designer</a>
+      <a href="Lifecareercoach.html">Life Career Coach</a>
+    </div>
+  </div> 
+</div>
+
+<marquee width="100%" direction="left" scrollamount="10">
+	<div class="marqueetext">
+		<h1>Start your career journey with us.       We help you build your career.<h1>
+	</div>
+	
+</marquee>
+<div class="row"> 
+  <div class="column">
+	<div class="container">
+		<img src="assets/images/digitalmarketing.png" style="width:100%">
+		<a href="Digitalmarketing.html"><button class="btn" href="Digitalmarketing.html">Digital marketing</button></a>
+	</div>
+	<div class="container">
+		<img src="assets/images/photography.png" style="width:100%">
+		<a href="Photography.html"><button class="btn">Photography</button></a>
+	</div>
+	<div class="container">
+		<img src="assets/images/foodtruck.png" style="width:100%">
+		<a href="Foodtruck.html"><button class="btn">Food Truck</button></a>
+	</div>
+  </div>
+  <div class="column">
+  <div class="container">
+		<img src="assets/images/youtuber.png" style="width:100%">
+		<a href="Youtuber.html"><button class="btn">Youtuber</button></a>
+	</div>
+	<div class="container">
+		<img src="assets/images/graphicdesigner.png" style="width:100%;max-height:700px">
+		<a href="Graphicdesigner.html"><button class="btn">Graphic Designer</button></a>
+	</div>
+	<div class="container">
+		<img src="assets/images/lifecareercoach.png" style="width:100%">
+		<a href="Lifecareercoach.html"><button class="btn">Life Career Coach</button></a>
+	</div>
+  </div>  
+  
+</div>
+</body>
+</html>
